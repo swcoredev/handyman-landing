@@ -143,18 +143,19 @@
         },
         "sheetName": {
           "__rl": true,
+          "value": "Handyman_leads",
           "mode": "name"
         },
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "Date": "={{$json.body.meta.timestamp}}",
-            "Name": "={{$json.body.data.name}}",
-            "Phone": "={{$json.body.data.phone}}",
-            "Email": "={{$json.body.data.email}}",
-            "Service": "={{$json.body.data.service}}",
-            "Message": "={{$json.body.data.message}}",
-            "Page": "={{$json.body.meta.page}}"
+            "id": "={{$node[\"Webhook\"].json.body.meta.timestamp.replace(/\\D/g, '')}}",
+            "Date": "={{$node[\"Webhook\"].json.body.meta.timestamp}}",
+            "Name": "={{$node[\"Webhook\"].json.body.data.name}}",
+            "Email": "={{$node[\"Webhook\"].json.body.data.email}}",
+            "Phone": "={{$node[\"Webhook\"].json.body.data.phone}}",
+            "Message": "={{$node[\"Webhook\"].json.body.data.message}}",
+            "Service": "={{$node[\"Webhook\"].json.body.data.service}}"
           },
           "matchingColumns": []
         },

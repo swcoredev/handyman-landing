@@ -175,7 +175,7 @@ function showNotification(message, type = 'info') {
     notification.className = `notification notification-${type}`;
     notification.innerHTML = `
         <div class="notification-content">
-            <span class="notification-icon">${type === 'success' ? '✓' : 'ℹ'}</span>
+            <span class="notification-icon">${type === 'success' ? '✓' : (type === 'error' ? '✕' : 'ℹ')}</span>
             <span class="notification-message">${message}</span>
         </div>
     `;
@@ -200,6 +200,10 @@ function showNotification(message, type = 'info') {
             border-left-color: hsl(120, 60%, 50%);
         }
         
+        .notification-error {
+            border-left-color: hsl(0, 75%, 50%);
+        }
+        
         .notification-info {
             border-left-color: hsl(215, 100%, 50%);
         }
@@ -217,6 +221,10 @@ function showNotification(message, type = 'info') {
         
         .notification-success .notification-icon {
             color: hsl(120, 60%, 50%);
+        }
+        
+        .notification-error .notification-icon {
+            color: hsl(0, 75%, 50%);
         }
         
         .notification-info .notification-icon {

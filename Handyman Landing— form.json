@@ -23,7 +23,7 @@
         "fromEmail": "info@gromman.com",
         "toEmail": "info@gromman.com",
         "subject": "🔧 HANDYMAN: Новая заявка ({{$json.body.data.name}})",
-        "html": "=<div style=\"font-family: sans-serif; padding: 20px; border: 2px solid #2563eb; border-radius: 10px; max-width: 600px;\">\n  <h2 style=\"color: #2563eb; margin-top: 0;\">🏠 Handyman: Новая заявка</h2>\n  \n  <p><b>👤 Имя клиента:</b> {{$json.body.data.name}}</p>\n  <p><b>📱 Телефон:</b> {{$json.body.data.phone}}</p>\n  <p><b>✉️ Email:</b> {{$json.body.data.email || 'Не указан'}}</p>\n  <p><b>🛠️ Услуга:</b> {{$json.body.data.service}}</p>\n  \n  <div style=\"background: #f3f4f6; padding: 15px; border-radius: 5px; margin: 20px 0;\">\n    <b>📝 Сообщение:</b><br/>\n    {{$json.body.data.message}}\n  </div>\n\n  <hr style=\"border: 0; border-top: 1px solid #e5e7eb;\" />\n  <p style=\"font-size: 12px; color: #6b7280;\">\n    <b>Источник:</b> Handyman Landing Page<br/>\n    <b>Язык:</b> {{$json.body.meta.lang}}<br/>\n    <b>URL:</b> {{$json.body.meta.page}}\n  </p>\n</div>",
+        "html": "=<div style=\"font-family: sans-serif; padding: 20px; border: 2px solid #2563eb; border-radius: 10px; max-width: 600px;\">\n  <h2 style=\"color: #2563eb; margin-top: 0;\">🏠 Handyman: Новая заявка</h2>\n  \n  <p><b>👤 Имя клиента:</b> {{$json.body.data.name}}</p>\n  <p><b>📱 Телефон:</b> {{$json.body.data.phone}}</p>\n  <p><b>✉️ Email:</b> {{$json.body.data.email || 'Не указан'}}</p>\n  <p><b>� Адрес:</b> {{$json.body.data.address}}</p>\n  <p><b>�🛠️ Услуга:</b> {{$json.body.data.service}}</p>\n  \n  <div style=\"background: #f3f4f6; padding: 15px; border-radius: 5px; margin: 20px 0;\">\n    <b>📝 Сообщение:</b><br/>\n    {{$json.body.data.message}}\n  </div>\n\n  <hr style=\"border: 0; border-top: 1px solid #e5e7eb;\" />\n  <p style=\"font-size: 12px; color: #6b7280;\">\n    <b>Источник:</b> Handyman Landing Page<br/>\n    <b>Язык:</b> {{$json.body.meta.lang}}<br/>\n    <b>URL:</b> {{$json.body.meta.page}}\n  </p>\n</div>",
         "options": {}
       },
       "type": "n8n-nodes-base.emailSend",
@@ -155,7 +155,8 @@
             "Email": "={{$node[\"Webhook\"].json.body.data.email}}",
             "Phone": "={{ \"'\" + $node[\"Webhook\"].json.body.data.phone }}",
             "Message": "={{$node[\"Webhook\"].json.body.data.message}}",
-            "Service": "={{$node[\"Webhook\"].json.body.data.service}}"
+            "Service": "={{$node[\"Webhook\"].json.body.data.service}}",
+            "Address": "={{$node[\"Webhook\"].json.body.data.address}}"
           },
           "matchingColumns": []
         },

@@ -280,24 +280,22 @@ if (phoneInput) {
     phoneInput.addEventListener('input', (e) => {
         let value = e.target.value.replace(/\D/g, '');
 
+        // Remove leading 1 if it's there to handle uniformly
+        if (value.length > 0 && value[0] === '1') {
+            value = value.slice(1);
+        }
+
         if (value.length > 0) {
-            if (value[0] === '8') {
-                value = '7' + value.slice(1);
-            }
+            let formatted = '+1';
 
-            let formatted = '+7';
-
-            if (value.length > 1) {
-                formatted += ' (' + value.slice(1, 4);
+            if (value.length > 0) {
+                formatted += ' (' + value.slice(0, 3);
             }
-            if (value.length >= 5) {
-                formatted += ') ' + value.slice(4, 7);
+            if (value.length >= 4) {
+                formatted += ') ' + value.slice(3, 6);
             }
-            if (value.length >= 8) {
-                formatted += '-' + value.slice(7, 9);
-            }
-            if (value.length >= 10) {
-                formatted += '-' + value.slice(9, 11);
+            if (value.length >= 7) {
+                formatted += '-' + value.slice(6, 10);
             }
 
             e.target.value = formatted;

@@ -6,3 +6,6 @@ node_modules/
 .vscode/
 dist/
 build/
+
+cloudflared-config.yml
+*.pid

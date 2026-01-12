@@ -43,9 +43,13 @@ const translations = {
                 items: ["Ceiling fan installation", "Light fixture replacement", "Smart home switches"]
             },
             repairs: {
-                title: "Minor Home Repairs",
-                description: "Fixing small household issues quickly without the hassle of a big contractor.",
-                items: ["Drywall patching", "Door & cabinet adjustments", "Leaky faucet fixes"]
+                title: "Plumbing & Repairs",
+                description: "Fixing leaks, replacing faucets, and other household repairs.",
+                items: [
+                    "Faucet & sink replacement",
+                    "Leaky pipe fixes",
+                    "Door & cabinet adjustments"
+                ]
             },
             installation: {
                 title: "Installation"
@@ -225,12 +229,12 @@ const translations = {
                 ]
             },
             repairs: {
-                title: "Мелкий ремонт",
-                description: "Устранение бытовых проблем: от скрипа дверей до замены смесителя.",
+                title: "Сантехника и Ремонт",
+                description: "Устранение протечек, замена смесителей и мелкий бытовой ремонт.",
                 items: [
-                    "Ремонт замков и ручек",
-                    "Регулировка дверей",
-                    "Замена смесителей"
+                    "Замена кранов и смесителей",
+                    "Устранение протечек",
+                    "Ремонт замков и ручек"
                 ]
             },
             installation: {

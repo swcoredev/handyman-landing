@@ -4,8 +4,9 @@ const translations = {
         // Navigation
         nav: {
             services: "Services",
-            benefits: "Why Me",
-            about: "About Me",
+            gallery: "Gallery",
+            benefits: "Benefits",
+            about: "About",
             reviews: "Reviews",
             contact: "Contact",
             ctaButton: "Get Started"
@@ -19,13 +20,13 @@ const translations = {
                 "Clean, professional tools and neat results",
                 "Clear prices with no hidden surprises"
             ],
-            ctaButton: "Get a Free Quote",
-            servicesButton: "View My Services"
+            ctaButton: "Get a Quote",
+            servicesButton: "Our Services"
         },
         // Services Section
         services: {
-            title: "How I Can Help",
-            description: "No job is too small. I focus on doing things right the first time.",
+            title: "Our Services",
+            description: "Professional handyman services for all your home needs - no job too small",
             furniture: {
                 title: "Furniture Assembly",
                 description: "Professional assembly of IKEA, Wayfair, and Amazon purchases. Neatly built and ready to use.",
@@ -45,7 +46,15 @@ const translations = {
                 title: "Minor Home Repairs",
                 description: "Fixing small household issues quickly without the hassle of a big contractor.",
                 items: ["Drywall patching", "Door & cabinet adjustments", "Leaky faucet fixes"]
+            },
+            installation: {
+                title: "Installation"
             }
+        },
+        // Gallery Section
+        gallery: {
+            title: "Recent Work",
+            description: "Take a look at some of my recent projects. Quality and attention to detail are my priorities."
         },
         // Why Choose Me Section
         benefits: {
@@ -165,48 +174,73 @@ const translations = {
         // Navigation
         nav: {
             services: "Услуги",
-            benefits: "Почему я",
+            gallery: "Галерея",
+            benefits: "Почему мы",
             about: "Обо мне",
             reviews: "Отзывы",
             contact: "Контакты",
-            ctaButton: "Начать"
+            ctaButton: "Оставить заявку"
         },
         // Hero Section
         hero: {
-            title: "Надёжный мастер для вашего дома",
-            description: "Соберу мебель, повешу телевизор или починю то, что сломалось, пока вы отдыхаете.",
+            title: "Надежный муж на час для вашего дома",
+            description: "Соберу мебель, повешу телевизор и починю всё, что сломалось. Без посредников и переплат.",
             bullets: [
-                "Приезжаю лично и вовремя (никаких посредников)",
-                "Свой профессиональный инструмент и порядок после работы",
-                "Честные цены без скрытых наценок"
+                "Работаю сам, без незнакомых помощников",
+                "Чистый инструмент и аккуратность",
+                "Точная цена до начала работ"
             ],
-            ctaButton: "Узнать стоимость",
-            servicesButton: "Мои услуги"
+            ctaButton: "Вызвать мастера",
+            servicesButton: "Наши услуги"
         },
         // Services Section
         services: {
-            title: "Чем я могу помочь",
-            description: "Любая мелкая задача важна. Я делаю работу качественно с первого раза.",
+            title: "Мои услуги",
+            description: "Профессиональная помощь по дому — от сборки шкафа до мелкого ремонта",
             furniture: {
                 title: "Сборка мебели",
-                description: "Качественная сборка любой мебели: IKEA, Amazon и другие. Всё будет собрано ровно и аккуратно.",
-                items: ["Мебель IKEA и аналоги", "Офисная и домашняя мебель", "Кровати и комоды"]
+                description: "Сборка IKEA, Hoff, Leroy Merlin и др. Быстро, ровно и без лишних деталей.",
+                items: [
+                    "Специалист по IKEA",
+                    "Офисная и домашняя мебель",
+                    "Кровати, шкафы, комоды"
+                ]
             },
             mounting: {
-                title: "Монтаж ТВ",
-                description: "Надёжное крепление телевизора на любую стену. Скрою провода и выставлю идеальный уровень.",
-                items: ["Монтаж ТВ до 85\"", "Кабель-менеджмент", "Установка саундбаров"]
+                title: "Монтаж техники",
+                description: "Надежное крепление на любую стену. Скрытие проводов и идеальный уровень.",
+                items: [
+                    "Монтаж ТВ до 85 дюймов",
+                    "Кабель-менеджмент",
+                    "Установка кронштейнов"
+                ]
             },
             lighting: {
-                title: "Свет и вентиляторы",
-                description: "Установка светильников, люстр и вентиляторов. Безопасное подключение в любой комнате.",
-                items: ["Потолочные вентиляторы", "Замена люстр", "Умные выключатели"]
+                title: "Электрика и свет",
+                description: "Установка люстр, светильников, замена розеток и выключателей.",
+                items: [
+                    "Установка люстр и бра",
+                    "Замена ламп и патронов",
+                    "Умные выключатели"
+                ]
             },
             repairs: {
                 title: "Мелкий ремонт",
-                description: "Устранение мелких бытовых проблем без лишней суеты и крупных подрядчиков.",
-                items: ["Ремонт стен (гипсокартон)", "Регулировка дверей", "Устранение протечек"]
+                description: "Устранение бытовых проблем: от скрипа дверей до замены смесителя.",
+                items: [
+                    "Ремонт замков и ручек",
+                    "Регулировка дверей",
+                    "Замена смесителей"
+                ]
+            },
+            installation: {
+                title: "Установка"
             }
+        },
+        // Gallery Section
+        gallery: {
+            title: "Мои работы",
+            description: "Посмотрите примеры выполненных заказов. Аккуратность и качество — мои приоритеты."
         },
         // Why Choose Me Section
         benefits: {

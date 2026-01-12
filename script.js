@@ -129,21 +129,36 @@ if (contactForm) {
         submitButton.innerHTML = loadingText;
         submitButton.disabled = true;
 
-        // Simulate form submission (replace with actual API call)
-        setTimeout(() => {
-            // Show success message
-            const successMsg = getTranslation('notifications.success');
-            showNotification(successMsg, 'success');
+        try {
+            const response = await fetch('https://n8n.gromman.com/webhook/handyman', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
 
-            // Reset form
-            contactForm.reset();
+            if (response.ok) {
+                // Show success message
+                const successMsg = getTranslation('notifications.success');
+                showNotification(successMsg, 'success');
 
+                // Reset form
+                contactForm.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            const errorMsg = currentLang === 'ru'
+                ? 'Произошла ошибка при отправке. Попробуйте позже.'
+                : 'An error occurred during submission. Please try again later.';
+            showNotification(errorMsg, 'error');
+        } finally {
             // Restore button
             submitButton.innerHTML = originalText;
             submitButton.disabled = false;
-
-            console.log('Form data:', data);
-        }, 1500);
+        }
     });
 }
 

@@ -136,6 +136,41 @@
     },
     {
       "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Date": "={{$json.body.meta.timestamp}}",
+            "Name": "={{$json.body.data.name}}",
+            "Phone": "={{$json.body.data.phone}}",
+            "Email": "={{$json.body.data.email}}",
+            "Service": "={{$json.body.data.service}}",
+            "Message": "={{$json.body.data.message}}",
+            "Page": "={{$json.body.meta.page}}"
+          },
+          "matchingColumns": []
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        100,
+        -180
+      ],
+      "id": "c7a8b9d0-e1f2-4a3b-b4c5-d6e7f8a9b0c1",
+      "name": "Google Sheets"
+    },
+    {
+      "parameters": {
         "respondWith": "json",
         "responseBody": "={{$json}}",
         "options": {
@@ -163,6 +198,17 @@
   "pinData": {},
   "connections": {
     "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
       "main": [
         [
           {

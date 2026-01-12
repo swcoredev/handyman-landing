@@ -122,6 +122,11 @@ if (contactForm) {
         const formData = new FormData(contactForm);
         const formEntries = Object.fromEntries(formData);
 
+        // Get readable service name
+        const serviceSelect = contactForm.querySelector('#service');
+        const serviceName = serviceSelect.options[serviceSelect.selectedIndex].text;
+        formEntries.service = serviceName;
+
         // Prepare data in the format expected by the n8n workflow
         const payload = {
             data: formEntries,

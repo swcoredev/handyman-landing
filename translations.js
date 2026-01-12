@@ -1,181 +1,155 @@
-// Language translations for the handyman website
+// Language translations for the solo handyman website
 const translations = {
     en: {
         // Navigation
         nav: {
             services: "Services",
-            benefits: "Benefits",
-            about: "About",
+            benefits: "Why Me",
+            about: "About Me",
             reviews: "Reviews",
             contact: "Contact",
             ctaButton: "Get Started"
         },
         // Hero Section
         hero: {
-            title: "Professional Handyman",
-            subtitle: "at Your Service",
-            description: "We solve all your household problems quickly and professionally. From minor repairs to complex projects. Quality guaranteed.",
-            ctaButton: "Get a Quote",
-            servicesButton: "Our Services",
-            stats: {
-                clients: "Happy Clients",
-                experience: "Years Experience",
-                satisfaction: "Satisfaction Rate"
-            },
-            cards: {
-                sameDay: "Same Day Service",
-                quality: "Quality Guarantee",
-                pricing: "Fair Pricing"
-            }
+            title: "Reliable Handyman for Your Home Projects",
+            description: "I'll handle your furniture assembly, TV mounting, and home repairs so you can relax.",
+            bullets: [
+                "I show up on time and work alone (no strangers)",
+                "Clean, professional tools and neat results",
+                "Clear prices with no hidden surprises"
+            ],
+            ctaButton: "Get a Free Quote",
+            servicesButton: "View My Services"
         },
         // Services Section
         services: {
-            title: "Our Services",
-            description: "Professional handyman services for all your home needs - no job too small",
+            title: "How I Can Help",
+            description: "No job is too small. I focus on doing things right the first time.",
             furniture: {
                 title: "Furniture Assembly",
-                description: "Professional assembly of all types of furniture. IKEA, Wayfair, Amazon purchases - we build it all.",
-                items: ["IKEA & flat-pack furniture", "Office furniture setup", "Bed frames & dressers"]
+                description: "Professional assembly of IKEA, Wayfair, and Amazon purchases. Neatly built and ready to use.",
+                items: ["IKEA & flat-pack specialist", "Office & home furniture", "Bed frames and dressers"]
             },
-            painting: {
-                title: "Painting Services",
-                description: "Interior and exterior painting to refresh your home's look with professional results.",
-                items: ["Interior wall painting", "Trim & baseboard painting", "Deck & fence staining"]
+            mounting: {
+                title: "TV Mounting",
+                description: "Secure mounting on any wall type. Hidden cables and perfect leveling for your viewing experience.",
+                items: ["Wall mounting up to 85\"", "Wire management", "Soundbar installation"]
+            },
+            lighting: {
+                title: "Lighting & Fans",
+                description: "Installation of new fixtures, dimmers, or ceiling fans. Safe and professional setup.",
+                items: ["Ceiling fan installation", "Light fixture replacement", "Smart home switches"]
             },
             repairs: {
-                title: "Minor Repairs",
-                description: "Fix small household issues quickly without the need for specialized contractors.",
-                items: ["Drywall patching & repair", "Door & cabinet adjustments", "Squeaky floor fixes"]
-            },
-            installation: {
-                title: "Installation Services",
-                description: "Professional installation of shelves, curtains, TVs, and home accessories.",
-                items: ["TV wall mounting", "Shelving & storage systems", "Curtain rods & blinds"]
-            },
-            yard: {
-                title: "Yard Maintenance",
-                description: "Keep your outdoor spaces clean and well-maintained year-round.",
-                items: ["Lawn mowing & edging", "Gutter cleaning", "Pressure washing"]
-            },
-            general: {
-                title: "General Handyman",
-                description: "All-around home help for those odd jobs and daily maintenance tasks.",
-                items: ["Light bulb replacement", "Picture & mirror hanging", "Caulking & weatherstripping"]
+                title: "Minor Home Repairs",
+                description: "Fixing small household issues quickly without the hassle of a big contractor.",
+                items: ["Drywall patching", "Door & cabinet adjustments", "Leaky faucet fixes"]
             }
         },
-        // Benefits Section
+        // Why Choose Me Section
         benefits: {
-            title: "Why Choose Us",
+            title: "Why You Can Trust Me",
             items: {
-                sameDay: {
-                    title: "Same-Day Service",
-                    description: "We arrive the same day or at a time that's convenient for you"
+                direct: {
+                    title: "Direct Communication",
+                    description: "You talk to me, and I do the work. No managers or middlemen involved."
                 },
-                professionals: {
-                    title: "Experienced Professionals",
-                    description: "All our specialists have proper training and extensive work experience"
+                transparent: {
+                    title: "Fair & Transparent",
+                    description: "I provide clear estimates before I start. You'll know exactly what you're paying for."
                 },
-                pricing: {
-                    title: "Fair Pricing",
-                    description: "We provide quotes upfront. No hidden fees or surprises"
+                respect: {
+                    title: "Respect for Your Home",
+                    description: "I treat your space like my own. I work cleanly and always tidy up before I leave."
                 },
-                tools: {
-                    title: "Professional Tools",
-                    description: "We use professional equipment and quality materials"
-                },
-                guarantee: {
-                    title: "Quality Guarantee",
-                    description: "We provide a minimum 6-month warranty on all completed work"
-                },
-                customer: {
-                    title: "Customer-Focused",
-                    description: "We consider all your preferences and work until you're fully satisfied"
+                punctual: {
+                    title: "Reliable Scheduling",
+                    description: "I value your time. If I say I'll be there at 9 AM, I'll be there at 9 AM."
                 }
             }
         },
         // About Section
         about: {
             title: "About Me",
-            name: "Your Name", // Replace with actual name
-            experience: "25+ Years of Experience",
-            description: "With over 25 years of experience in home repair and maintenance, I'm dedicated to providing quality handyman services to homeowners. I take pride in my work and treat every home as if it were my own. Committed to excellence and customer satisfaction.",
-            certifications: "Professional Skills",
-            certList: ["Expert Problem Solver", "Quality Workmanship", "Reliable & Trustworthy"]
+            name: "I'm Gene",
+            description: "Hi, I'm Gene, your local handyman. I realized that many homeowners just need someone reliable they can trust with small home tasks. I decided to work as a solo master because I take pride in doing a job correctly from start to finish. When you hire me, you aren't getting a random crew—you're getting my personal dedication to your home. I focus on being punctual, honest, and leaving every job site cleaner than I found it. My goal is to make your life easier by taking care of the small things that matter.",
+            skills: "My Commitment",
+            skillList: ["Personal Accountability", "Quality Workmanship", "Honest Pricing"]
         },
         // Reviews Section
         reviews: {
-            title: "Customer Reviews",
+            title: "What My Clients Say",
             items: [
                 {
-                    text: "Excellent work! They assembled my new IKEA furniture quickly and professionally. The price was fair and the quality was outstanding. Will definitely use again!",
-                    author: "Sarah Martinez",
-                    date: "2 weeks ago"
+                    text: "He arrived exactly on time to mount my 65-inch TV. The work was clean, and he even helped me figure out where to hide the cords. Very professional!",
+                    author: "Mark R.",
+                    date: "Recent Customer"
                 },
                 {
-                    text: "Called them for TV mounting and shelf installation. Arrived on time, worked quickly and efficiently. Everything looks perfect. Highly recommend!",
-                    author: "John Davis",
-                    date: "1 month ago"
+                    text: "Assembled a huge IKEA cabinet in less than two hours. It's solid as a rock. It's so hard to find someone this reliable lately.",
+                    author: "Sarah T.",
+                    date: "Recent Customer"
                 },
                 {
-                    text: "Very satisfied with the work! They painted my living room beautifully. Clean, professional, and reasonably priced. Thank you!",
-                    author: "Emily Williams",
-                    date: "3 weeks ago"
+                    text: "Fixed a leaky faucet and three squeaky doors in one visit. No drama, just good work. Definitely my go-to person now.",
+                    author: "James L.",
+                    date: "Recent Customer"
                 }
             ]
         },
         // Contact Section
         contact: {
-            title: "Request Service",
-            description: "Submit a request and we'll call you back within 10 minutes to discuss details and schedule a convenient time",
+            title: "Let's fix it today",
+            description: "Tell me what needs to be done, and I'll get back to you with a personal estimate within 30 minutes.",
             details: {
-                phone: "Phone",
+                phone: "Call or Text",
                 phoneValue: "+1 (555) 123-4567",
                 email: "Email",
-                emailValue: "info@handyman-services.com",
-                hours: "Hours",
-                hoursValue: "Daily: 8:00 AM - 10:00 PM"
+                emailValue: "me@yourhandyman.com",
+                hours: "Availability",
+                hoursValue: "Daily: 8:00 AM - 8:00 PM"
             },
             form: {
                 name: "Your Name",
                 namePlaceholder: "John Smith",
-                phone: "Phone",
+                phone: "Your Phone",
                 phonePlaceholder: "(555) 123-4567",
-                service: "Service Type",
-                servicePlaceholder: "Select a service",
+                service: "What do you need help with?",
+                servicePlaceholder: "Select a task",
                 serviceOptions: {
                     furniture: "Furniture Assembly",
-                    painting: "Painting",
+                    mounting: "TV Mounting",
+                    lighting: "Lighting & Fans",
                     repairs: "Minor Repairs",
-                    installation: "Installation Services",
-                    yard: "Yard Maintenance",
                     other: "Other"
                 },
-                message: "Job Description",
+                message: "A few details",
                 messagePlaceholder: "Describe what you need done",
-                submit: "Submit Request",
-                privacy: "By submitting, you agree to our privacy policy"
+                submit: "Send me a message",
+                privacy: "I value your privacy and only use your phone to contact you about the job."
             }
         },
         // Footer
         footer: {
-            description: "Professional home repair and maintenance services. Serving the community since 2009.",
-            services: "Services",
+            description: "Your local personal handyman. Quality work, honest talk.",
+            services: "Quick Links",
             contact: "Contact",
             hours: "Hours",
-            hoursValue: ["Monday - Sunday", "8:00 AM - 10:00 PM", "7 Days a Week"],
-            copyright: "© 2024 Handyman Services. All rights reserved."
+            hoursValue: ["Daily: 8:00 AM - 8:00 PM"],
+            copyright: "© 2026 Your Handyman. All rights reserved."
         },
         // Notifications
         notifications: {
-            success: "Thank you! We'll contact you shortly.",
-            error: "Something went wrong. Please try again."
+            success: "Got it! I'll call or text you shortly.",
+            error: "Something went wrong. Please try again or text me directly."
         }
     },
     ru: {
         // Navigation
         nav: {
             services: "Услуги",
-            benefits: "Преимущества",
+            benefits: "Почему я",
             about: "Обо мне",
             reviews: "Отзывы",
             contact: "Контакты",
@@ -183,163 +157,137 @@ const translations = {
         },
         // Hero Section
         hero: {
-            title: "Профессиональный мастер",
-            subtitle: "у вас дома",
-            description: "Решаем любые бытовые проблемы быстро и качественно. От мелкого ремонта до сложных работ. Гарантия на все услуги.",
-            ctaButton: "Заказать звонок",
-            servicesButton: "Наши услуги",
-            stats: {
-                clients: "Довольных клиентов",
-                experience: "Лет опыта",
-                satisfaction: "Довольны работой"
-            },
-            cards: {
-                sameDay: "Выезд в день обращения",
-                quality: "Гарантия качества",
-                pricing: "Честные цены"
-            }
+            title: "Надёжный мастер для вашего дома",
+            description: "Соберу мебель, повешу телевизор или починю то, что сломалось, пока вы отдыхаете.",
+            bullets: [
+                "Приезжаю лично и вовремя (никаких посредников)",
+                "Свой профессиональный инструмент и порядок после работы",
+                "Честные цены без скрытых наценок"
+            ],
+            ctaButton: "Узнать стоимость",
+            servicesButton: "Мои услуги"
         },
         // Services Section
         services: {
-            title: "Наши услуги",
-            description: "Профессиональные услуги мастера для всех ваших домашних нужд - нет слишком маленьких работ",
+            title: "Чем я могу помочь",
+            description: "Любая мелкая задача важна. Я делаю работу качественно с первого раза.",
             furniture: {
                 title: "Сборка мебели",
-                description: "Профессиональная сборка всех типов мебели. IKEA, Wayfair, покупки на Amazon - мы соберём всё.",
-                items: ["Мебель IKEA и плоские упаковки", "Сборка офисной мебели", "Кровати и комоды"]
+                description: "Качественная сборка любой мебели: IKEA, Amazon и другие. Всё будет собрано ровно и аккуратно.",
+                items: ["Мебель IKEA и аналоги", "Офисная и домашняя мебель", "Кровати и комоды"]
             },
-            painting: {
-                title: "Малярные работы",
-                description: "Внутренняя и внешняя покраска для обновления вашего дома с профессиональным результатом.",
-                items: ["Покраска внутренних стен", "Покраска плинтусов", "Окраска террас и заборов"]
+            mounting: {
+                title: "Монтаж ТВ",
+                description: "Надёжное крепление телевизора на любую стену. Скрою провода и выставлю идеальный уровень.",
+                items: ["Монтаж ТВ до 85\"", "Кабель-менеджмент", "Установка саундбаров"]
+            },
+            lighting: {
+                title: "Свет и вентиляторы",
+                description: "Установка светильников, люстр и вентиляторов. Безопасное подключение в любой комнате.",
+                items: ["Потолочные вентиляторы", "Замена люстр", "Умные выключатели"]
             },
             repairs: {
                 title: "Мелкий ремонт",
-                description: "Быстрое решение мелких бытовых проблем без необходимости вызова специализированных подрядчиков.",
-                items: ["Ремонт гипсокартона", "Регулировка дверей и шкафов", "Устранение скрипа полов"]
-            },
-            installation: {
-                title: "Услуги монтажа",
-                description: "Профессиональная установка полок, штор, телевизоров и домашних аксессуаров.",
-                items: ["Монтаж ТВ на стену", "Полки и системы хранения", "Карнизы и жалюзи"]
-            },
-            yard: {
-                title: "Уход за двором",
-                description: "Поддержание ваших открытых пространств в чистоте и порядке круглый год.",
-                items: ["Стрижка газона", "Чистка водостоков", "Мойка под давлением"]
-            },
-            general: {
-                title: "Общие работы",
-                description: "Комплексная помощь по дому для разных работ и повседневного обслуживания.",
-                items: ["Замена лампочек", "Навес картин и зеркал", "Герметизация и уплотнение"]
+                description: "Устранение мелких бытовых проблем без лишней суеты и крупных подрядчиков.",
+                items: ["Ремонт стен (гипсокартон)", "Регулировка дверей", "Устранение протечек"]
             }
         },
-        // Benefits Section
+        // Why Choose Me Section
         benefits: {
-            title: "Почему выбирают нас",
+            title: "Почему мне доверяют",
             items: {
-                sameDay: {
-                    title: "Выезд в день обращения",
-                    description: "Приезжаем в день обращения или в удобное для вас время"
+                direct: {
+                    title: "Прямое общение",
+                    description: "Вы общаетесь со мной и я же выполняю работу. Никаких менеджеров или посредников."
                 },
-                professionals: {
-                    title: "Опытные специалисты",
-                    description: "Все наши специалисты имеют профильное образование и большой опыт работы"
+                transparent: {
+                    title: "Честность и прозрачность",
+                    description: "Называю стоимость до начала работы. Вы точно знаете, за что платите."
                 },
-                pricing: {
-                    title: "Честные цены",
-                    description: "Озвучиваем стоимость заранее. Никаких скрытых платежей"
+                respect: {
+                    title: "Уважение к дому",
+                    description: "Отношусь к вашему дому как к своему. Работаю чисто и всегда убираю за собой."
                 },
-                tools: {
-                    title: "Профессиональный инструмент",
-                    description: "Используем профессиональное оборудование и качественные материалы"
-                },
-                guarantee: {
-                    title: "Гарантия качества",
-                    description: "Даём гарантию на все выполненные работы минимум 6 месяцев"
-                },
-                customer: {
-                    title: "Клиентоориентированность",
-                    description: "Учитываем все ваши пожелания и работаем до полного удовлетворения"
+                punctual: {
+                    title: "Пунктуальность",
+                    description: "Ценю ваше время. Если договорились на 9:00 — я буду у двери ровно в 9:00."
                 }
             }
         },
         // About Section
         about: {
             title: "Обо мне",
-            name: "Ваше имя", // Replace with actual name
-            experience: "Более 25 лет опыта",
-            description: "С более чем 25-летним опытом в ремонте и обслуживании домов, я предан качественному предоставлению услуг домовладельцам. Я горжусь своей работой и отношусь к каждому дому как к своему собственному. Предан качеству и удовлетворению клиентов.",
-            certifications: "Профессиональные навыки",
-            certList: ["Эксперт в решении проблем", "Качественная работа", "Надёжный и ответственный"]
+            name: "Я — Джин",
+            description: "Здравствуйте, меня зовут Джин. Я заметил, что многим владельцам домов просто нужен надёжный человек, которому можно доверить мелкие дела по дому. Я работаю один, потому что мне важно лично отвечать за качество каждой закрученной детали. Нанимая меня, вы не получаете случайную бригаду — вы получаете мой личный подход и ответственность. Я всегда прихожу вовремя, работаю честно и оставляю после себя чистоту. Моя задача — упростить вашу жизнь, взяв на себя те мелочи, до которых не доходят руки.",
+            skills: "Мой подход",
+            skillList: ["Личная ответственность", "Качественная работа", "Честные цены"]
         },
         // Reviews Section
         reviews: {
-            title: "Отзывы наших клиентов",
+            title: "Что говорят клиенты",
             items: [
                 {
-                    text: "Отличная работа! Быстро собрали мою новую мебель IKEA профессионально. Цена была справедливой, а качество отличным. Обязательно обращусь снова!",
-                    author: "Мария Александрова",
-                    date: "2 недели назад"
+                    text: "Приехал точно в срок, чтобы повесить мой 65-дюймовый ТВ. Всё сделал аккуратно, помог спрятать провода. Очень профессионально!",
+                    author: "Марк Р.",
+                    date: "Недавний клиент"
                 },
                 {
-                    text: "Вызвал для монтажа ТВ и установки полок. Приехали вовремя, работали быстро и эффективно. Всё выглядит идеально. Очень рекомендую!",
-                    author: "Дмитрий Петров",
-                    date: "1 месяц назад"
+                    text: "Собрал огромный шкаф из IKEA меньше чем за два часа. Стоит как влитой. Сейчас трудно найти такого надёжного мастера.",
+                    author: "Сара Т.",
+                    date: "Недавний клиент"
                 },
                 {
-                    text: "Очень доволен работой! Покрасили мою гостиную красиво. Чисто, профессионально и по разумной цене. Спасибо!",
-                    author: "Елена Иванова",
-                    date: "3 недели назад"
+                    text: "Починил кран и три скрипучие двери за один визит. Никаких лишних слов, просто хорошая работа. Теперь только к нему.",
+                    author: "Джеймс Л.",
+                    date: "Недавний клиент"
                 }
             ]
         },
         // Contact Section
         contact: {
-            title: "Заказать услугу",
-            description: "Оставьте заявку, и мы перезвоним вам в течение 10 минут, чтобы обсудить детали и согласовать удобное время",
+            title: "Помочь с ремонтом?",
+            description: "Напишите, что нужно сделать, и я отвечу вам с расчетом цены в течение 30 минут.",
             details: {
-                phone: "Телефон",
-                phoneValue: "+7 (999) 123-45-67",
+                phone: "Звонок или СМС",
+                phoneValue: "+1 (555) 123-4567",
                 email: "Email",
-                emailValue: "info@handyman-services.ru",
-                hours: "Режим работы",
-                hoursValue: "Ежедневно: 8:00 - 22:00"
+                emailValue: "me@yourhandyman.com",
+                hours: "Доступность",
+                hoursValue: "Ежедневно: 8:00 - 20:00"
             },
             form: {
                 name: "Ваше имя",
                 namePlaceholder: "Иван Иванов",
-                phone: "Телефон",
-                phonePlaceholder: "+7 (999) 123-45-67",
-                service: "Тип услуги",
+                phone: "Ваш телефон",
+                phonePlaceholder: "(555) 123-4567",
+                service: "С чем нужна помощь?",
                 servicePlaceholder: "Выберите услугу",
                 serviceOptions: {
                     furniture: "Сборка мебели",
-                    painting: "Малярные работы",
+                    mounting: "Монтаж ТВ",
+                    lighting: "Свет и вентиляторы",
                     repairs: "Мелкий ремонт",
-                    installation: "Услуги монтажа",
-                    yard: "Уход за двором",
                     other: "Другое"
                 },
-                message: "Описание работы",
-                messagePlaceholder: "Опишите, что нужно сделать",
-                submit: "Отправить заявку",
-                privacy: "Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности"
+                message: "Детали задачи",
+                messagePlaceholder: "Опишите кратко, что нужно сделать",
+                submit: "Отправить сообщение",
+                privacy: "Я уважаю вашу конфиденциальность и использую номер только для связи по работе."
             }
         },
         // Footer
         footer: {
-            description: "Профессиональный ремонт и обслуживание вашего дома. Обслуживаем с 2009 года.",
+            description: "Ваш персональный мастер. Качественная работа, честное общение.",
             services: "Услуги",
-            contact: "Контакты",
-            hours: "Время работы",
-            hoursValue: ["Понедельник - Воскресенье", "8:00 - 22:00", "Без выходных"],
-            copyright: "© 2024 Handyman Services. Все права защищены."
+            contact: "Контакт",
+            hours: "Часы работы",
+            hoursValue: ["Ежедневно: 8:00 - 20:00"],
+            copyright: "© 2026 Ваш Мастер. Все права защищены."
         },
         // Notifications
         notifications: {
-            success: "Спасибо! Мы свяжемся с вами в ближайшее время.",
-            error: "Что-то пошло не так. Пожалуйста, попробуйте снова."
+            success: "Получено! Я свяжусь с вами в ближайшее время.",
+            error: "Произошла ошибка. Пожалуйста, попробуйте еще раз или напишите мне СМС."
         }
     }
 };

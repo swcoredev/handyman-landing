@@ -4,7 +4,7 @@
   "description": "Bilingual landing page for handyman services",
   "main": "index.html",
   "scripts": {
-    "start": "npx serve .",
+    "start": "npx serve . -l 3100",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

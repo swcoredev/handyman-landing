@@ -53,53 +53,30 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="highlight">Professional Handyman</span>
-                        <br>at Your Service
+                    <h1 class="hero-title" data-i18n="hero.title">
+                        Reliable Handyman for Your Home Projects
                     </h1>
-                    <p class="hero-description">
-                        We solve all your household problems quickly and professionally.
-                        From minor repairs to complex projects. Quality guaranteed.
+                    <p class="hero-description" data-i18n="hero.description">
+                        I'll handle your furniture assembly, TV mounting, and home repairs so you can relax.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn-primary" onclick="scrollToForm()">
+                        <button class="btn-primary" onclick="scrollToForm()" data-i18n="hero.ctaButton">
                             Get a Quote
                             <span class="btn-arrow">→</span>
                         </button>
-                        <button class="btn-secondary" onclick="smoothScrollTo('#services')">
+                        <button class="btn-secondary" onclick="smoothScrollTo('#services')"
+                            data-i18n="hero.servicesButton">
                             Our Services
                         </button>
                     </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <div class="stat-number">5000+</div>
-                            <div class="stat-label">Happy Clients</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">98%</div>
-                            <div class="stat-label">Satisfaction Rate</div>
-                        </div>
-                    </div>
+                    <ul class="hero-bullets">
+                        <li data-i18n="hero.bullets.0">I show up on time and work alone (no strangers)</li>
+                        <li data-i18n="hero.bullets.1">Clean, professional tools and neat results</li>
+                        <li data-i18n="hero.bullets.2">Clear prices with no hidden surprises</li>
+                    </ul>
                 </div>
                 <div class="hero-image">
-                    <div class="hero-image-container">
-                        <div class="floating-card card-1">
-                            <span class="card-icon">⚡</span>
-                            <span class="card-text">Same Day Service</span>
-                        </div>
-                        <div class="floating-card card-2">
-                            <span class="card-icon">✓</span>
-                            <span class="card-text">Quality Guarantee</span>
-                        </div>
-                        <div class="floating-card card-3">
-                            <span class="card-icon">💰</span>
-                            <span class="card-text">Fair Pricing</span>
-                        </div>
-                    </div>
+                    <!-- Personal master doesn't need corporate floating cards -->
                 </div>
             </div>
         </div>
@@ -109,74 +86,54 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-description">Professional handyman services for all your home needs - no job too small
+                <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+                <p class="section-description" data-i18n="services.description">Professional handyman services for all
+                    your home needs - no job too small
                 </p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🪛</div>
-                    <h3 class="service-title">Furniture Assembly</h3>
-                    <p class="service-description">Professional assembly of all types of furniture. IKEA, Wayfair,
-                        Amazon purchases - we build it all.</p>
+                    <h3 class="service-title" data-i18n="services.furniture.title">Furniture Assembly</h3>
+                    <p class="service-description" data-i18n="services.furniture.description">Professional assembly of
+                        IKEA, Wayfair, and Amazon purchases. Neatly built and ready to use.</p>
                     <ul class="service-list">
-                        <li>IKEA & flat-pack furniture</li>
-                        <li>Office furniture setup</li>
-                        <li>Bed frames & dressers</li>
+                        <li data-i18n="services.furniture.items.0">IKEA & flat-pack specialist</li>
+                        <li data-i18n="services.furniture.items.1">Office & home furniture</li>
+                        <li data-i18n="services.furniture.items.2">Bed frames and dressers</li>
                     </ul>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3 class="service-title">Painting Services</h3>
-                    <p class="service-description">Interior and exterior painting to refresh your home's look with
-                        professional results.</p>
+                    <div class="service-icon">📺</div>
+                    <h3 class="service-title" data-i18n="services.mounting.title">TV Mounting</h3>
+                    <p class="service-description" data-i18n="services.mounting.description">Secure mounting on any wall
+                        type. Hidden cables and perfect leveling for your viewing experience.</p>
                     <ul class="service-list">
-                        <li>Interior wall painting</li>
-                        <li>Trim & baseboard painting</li>
-                        <li>Deck & fence staining</li>
+                        <li data-i18n="services.mounting.items.0">Wall mounting up to 85"</li>
+                        <li data-i18n="services.mounting.items.1">Wire management</li>
+                        <li data-i18n="services.mounting.items.2">Soundbar installation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3 class="service-title" data-i18n="services.lighting.title">Lighting & Fans</h3>
+                    <p class="service-description" data-i18n="services.lighting.description">Installation of new
+                        fixtures, dimmers, or ceiling fans. Safe and professional setup.</p>
+                    <ul class="service-list">
+                        <li data-i18n="services.lighting.items.0">Ceiling fan installation</li>
+                        <li data-i18n="services.lighting.items.1">Light fixture replacement</li>
+                        <li data-i18n="services.lighting.items.2">Smart home switches</li>
                     </ul>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔧</div>
-                    <h3 class="service-title">Minor Repairs</h3>
-                    <p class="service-description">Fix small household issues quickly without the need for specialized
-                        contractors.</p>
+                    <h3 class="service-title" data-i18n="services.repairs.title">Minor Home Repairs</h3>
+                    <p class="service-description" data-i18n="services.repairs.description">Fixing small household
+                        issues quickly without the hassle of a big contractor.</p>
                     <ul class="service-list">
-                        <li>Drywall patching & repair</li>
-                        <li>Door & cabinet adjustments</li>
-                        <li>Squeaky floor fixes</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📐</div>
-                    <h3 class="service-title">Installation Services</h3>
-                    <p class="service-description">Professional installation of shelves, curtains, TVs, and home
-                        accessories.</p>
-                    <ul class="service-list">
-                        <li>TV wall mounting</li>
-                        <li>Shelving & storage systems</li>
-                        <li>Curtain rods & blinds</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌿</div>
-                    <h3 class="service-title">Yard Maintenance</h3>
-                    <p class="service-description">Keep your outdoor spaces clean and well-maintained year-round.</p>
-                    <ul class="service-list">
-                        <li>Lawn mowing & edging</li>
-                        <li>Gutter cleaning</li>
-                        <li>Pressure washing</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3 class="service-title">General Handyman</h3>
-                    <p class="service-description">All-around home help for those odd jobs and daily maintenance tasks.
-                    </p>
-                    <ul class="service-list">
-                        <li>Light bulb replacement</li>
-                        <li>Picture & mirror hanging</li>
-                        <li>Caulking & weatherstripping</li>
+                        <li data-i18n="services.repairs.items.0">Drywall patching</li>
+                        <li data-i18n="services.repairs.items.1">Door & cabinet adjustments</li>
+                        <li data-i18n="services.repairs.items.2">Leaky faucet fixes</li>
                     </ul>
                 </div>
             </div>
@@ -187,41 +144,32 @@
     <section id="benefits" class="benefits">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Why Choose Us</h2>
+                <h2 class="section-title" data-i18n="benefits.title">Why Choose Us</h2>
             </div>
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3 class="benefit-title">Same-Day Service</h3>
-                    <p class="benefit-description">We arrive the same day or at a time that's convenient for you</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎯</div>
-                    <h3 class="benefit-title">Experienced Professionals</h3>
-                    <p class="benefit-description">All our specialists have proper training and extensive work
-                        experience
-                    </p>
+                    <div class="benefit-icon">🤝</div>
+                    <h3 class="benefit-title" data-i18n="benefits.items.direct.title">Direct Communication</h3>
+                    <p class="benefit-description" data-i18n="benefits.items.direct.description">You talk to me, and I
+                        do the work. No managers or middlemen involved.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">💰</div>
-                    <h3 class="benefit-title">Fair Pricing</h3>
-                    <p class="benefit-description">We provide quotes upfront. No hidden fees or surprises</p>
+                    <h3 class="benefit-title" data-i18n="benefits.items.transparent.title">Fair & Transparent</h3>
+                    <p class="benefit-description" data-i18n="benefits.items.transparent.description">I provide clear
+                        estimates before I start. You'll know exactly what you're paying for.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">🛠️</div>
-                    <h3 class="benefit-title">Professional Tools</h3>
-                    <p class="benefit-description">We use professional equipment and quality materials</p>
+                    <div class="benefit-icon">🏠</div>
+                    <h3 class="benefit-title" data-i18n="benefits.items.respect.title">Respect for Your Home</h3>
+                    <p class="benefit-description" data-i18n="benefits.items.respect.description">I treat your space
+                        like my own. I work cleanly and always tidy up before I leave.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon">✓</div>
-                    <h3 class="benefit-title">Quality Guarantee</h3>
-                    <p class="benefit-description">We provide a minimum 6-month warranty on all completed work</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🤝</div>
-                    <h3 class="benefit-title">Customer-Focused</h3>
-                    <p class="benefit-description">We consider all your preferences and work until you're fully
-                        satisfied</p>
+                    <div class="benefit-icon">⏰</div>
+                    <h3 class="benefit-title" data-i18n="benefits.items.punctual.title">Reliable Scheduling</h3>
+                    <p class="benefit-description" data-i18n="benefits.items.punctual.description">I value your time. If
+                        I say I'll be there at 9 AM, I'll be there at 9 AM.</p>
                 </div>
             </div>
         </div>
@@ -234,24 +182,24 @@
                 <div class="about-image">
                     <img src="profile-photo.jpg" alt="Professional Handyman" class="profile-photo">
                     <div class="experience-badge">
-                        <span class="experience-number">25+</span>
-                        <span class="experience-text" data-i18n="about.experience">Years of Experience</span>
+                        <span class="experience-text" data-i18n="about.skills">My Commitment</span>
                     </div>
                 </div>
                 <div class="about-text">
                     <h2 class="section-title" data-i18n="about.title">About Me</h2>
                     <h3 class="about-name" data-i18n="about.name">Your Name</h3>
                     <p class="about-description" data-i18n="about.description">
-                        With over 25 years of experience in home repair and maintenance, I'm dedicated to providing
-                        quality handyman services to homeowners. I take pride in my work and treat every home as if
-                        it were my own. Committed to excellence and customer satisfaction.
+                        Hi, I'm your local handyman. I realized that many homeowners just need someone reliable they can
+                        trust with small home tasks. I decided to work as a solo master because I take pride in doing a
+                        job correctly from start to finish. When you hire me, you aren't getting a random crew—you're
+                        getting my personal dedication to your home.
                     </p>
                     <div class="about-certifications">
-                        <h4 data-i18n="about.certifications">Professional Skills</h4>
+                        <h4 data-i18n="about.skills">My Commitment</h4>
                         <ul class="cert-list">
-                            <li data-i18n="about.certList.0">Expert Problem Solver</li>
-                            <li data-i18n="about.certList.1">Quality Workmanship</li>
-                            <li data-i18n="about.certList.2">Reliable & Trustworthy</li>
+                            <li data-i18n="about.skillList.0">Personal Accountability</li>
+                            <li data-i18n="about.skillList.1">Quality Workmanship</li>
+                            <li data-i18n="about.skillList.2">Honest Pricing</li>
                         </ul>
                     </div>
                 </div>
@@ -263,48 +211,48 @@
     <section id="reviews" class="reviews">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Customer Reviews</h2>
+                <h2 class="section-title" data-i18n="reviews.title">Customer Reviews</h2>
             </div>
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p class="review-text">
+                    <p class="review-text" data-i18n="reviews.items.0.text">
                         "Excellent work! They assembled my new IKEA furniture quickly and professionally.
                         The price was fair and the quality was outstanding. Will definitely use again!"
                     </p>
                     <div class="review-author">
                         <div class="author-avatar">SM</div>
                         <div class="author-info">
-                            <div class="author-name">Sarah Martinez</div>
-                            <div class="author-date">2 weeks ago</div>
+                            <div class="author-name" data-i18n="reviews.items.0.author">Sarah Martinez</div>
+                            <div class="author-date" data-i18n="reviews.items.0.date">2 weeks ago</div>
                         </div>
                     </div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p class="review-text">
+                    <p class="review-text" data-i18n="reviews.items.1.text">
                         "Called them for TV mounting and shelf installation.
                         Arrived on time, worked quickly and efficiently. Everything looks perfect. Highly recommend!"
                     </p>
                     <div class="review-author">
                         <div class="author-avatar">JD</div>
                         <div class="author-info">
-                            <div class="author-name">John Davis</div>
-                            <div class="author-date">1 month ago</div>
+                            <div class="author-name" data-i18n="reviews.items.1.author">John Davis</div>
+                            <div class="author-date" data-i18n="reviews.items.1.date">1 month ago</div>
                         </div>
                     </div>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p class="review-text">
+                    <p class="review-text" data-i18n="reviews.items.2.text">
                         "Very satisfied with the work! They painted my living room beautifully.
                         Clean, professional, and reasonably priced. Thank you!"
                     </p>
                     <div class="review-author">
                         <div class="author-avatar">EW</div>
                         <div class="author-info">
-                            <div class="author-name">Emily Williams</div>
-                            <div class="author-date">3 weeks ago</div>
+                            <div class="author-name" data-i18n="reviews.items.2.author">Emily Williams</div>
+                            <div class="author-date" data-i18n="reviews.items.2.date">3 weeks ago</div>
                         </div>
                     </div>
                 </div>
@@ -317,8 +265,8 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <h2 class="section-title">Request Service</h2>
-                    <p class="contact-description">
+                    <h2 class="section-title" data-i18n="contact.title">Request Service</h2>
+                    <p class="contact-description" data-i18n="contact.description">
                         Submit a request and we'll call you back within 10 minutes
                         to discuss details and schedule a convenient time
                     </p>
@@ -326,22 +274,25 @@
                         <div class="contact-item">
                             <div class="contact-icon">📞</div>
                             <div>
-                                <div class="contact-label">Phone</div>
-                                <div class="contact-value">+1 (555) 123-4567</div>
+                                <div class="contact-label" data-i18n="contact.details.phone">Phone</div>
+                                <div class="contact-value" data-i18n="contact.details.phoneValue">+1 (555) 123-4567
+                                </div>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📧</div>
                             <div>
-                                <div class="contact-label">Email</div>
-                                <div class="contact-value">info@handyman-services.com</div>
+                                <div class="contact-label" data-i18n="contact.details.email">Email</div>
+                                <div class="contact-value" data-i18n="contact.details.emailValue">
+                                    info@handyman-services.com</div>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">⏰</div>
                             <div>
-                                <div class="contact-label">Hours</div>
-                                <div class="contact-value">Daily: 8:00 AM - 10:00 PM</div>
+                                <div class="contact-label" data-i18n="contact.details.hours">Hours</div>
+                                <div class="contact-value" data-i18n="contact.details.hoursValue">Daily: 8:00 AM - 10:00
+                                    PM</div>
                             </div>
                         </div>
                     </div>
@@ -349,35 +300,40 @@
                 <div class="contact-form-wrapper">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                            <label for="name" data-i18n="contact.form.name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith"
+                                data-i18n="contact.form.namePlaceholder">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                            <label for="phone" data-i18n="contact.form.phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567"
+                                data-i18n="contact.form.phonePlaceholder">
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Type</label>
+                            <label for="service" data-i18n="contact.form.service">Service Type</label>
                             <select id="service" name="service" required>
-                                <option value="">Select a service</option>
-                                <option value="furniture">Furniture Assembly</option>
-                                <option value="painting">Painting</option>
-                                <option value="repairs">Minor Repairs</option>
-                                <option value="installation">Installation Services</option>
-                                <option value="yard">Yard Maintenance</option>
-                                <option value="other">Other</option>
+                                <option value="" data-i18n="contact.form.servicePlaceholder">Select a task</option>
+                                <option value="furniture" data-i18n="contact.form.serviceOptions.furniture">Furniture
+                                    Assembly</option>
+                                <option value="mounting" data-i18n="contact.form.serviceOptions.mounting">TV Mounting
+                                </option>
+                                <option value="lighting" data-i18n="contact.form.serviceOptions.lighting">Lighting &
+                                    Fans</option>
+                                <option value="repairs" data-i18n="contact.form.serviceOptions.repairs">Minor Repairs
+                                </option>
+                                <option value="other" data-i18n="contact.form.serviceOptions.other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Job Description</label>
-                            <textarea id="message" name="message" rows="4"
-                                placeholder="Describe what you need done"></textarea>
+                            <label for="message" data-i18n="contact.form.message">Job Description</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe what you need done"
+                                data-i18n="contact.form.messagePlaceholder"></textarea>
                         </div>
-                        <button type="submit" class="btn-submit">
+                        <button type="submit" class="btn-submit" data-i18n="contact.form.submit">
                             Submit Request
                             <span class="btn-arrow">→</span>
                         </button>
-                        <p class="form-privacy">
+                        <p class="form-privacy" data-i18n="contact.form.privacy">
                             By submitting, you agree to our privacy policy
                         </p>
                     </form>
@@ -395,39 +351,39 @@
                         <span class="logo-icon">🔧</span>
                         <span class="logo-text">Handyman</span>
                     </div>
-                    <p class="footer-description">
+                    <p class="footer-description" data-i18n="footer.description">
                         Professional home repair and maintenance services.
                         Serving the community since 2009.
                     </p>
                 </div>
                 <div class="footer-section">
-                    <h4 class="footer-title">Services</h4>
+                    <h4 class="footer-title" data-i18n="footer.services">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#services">Furniture Assembly</a></li>
-                        <li><a href="#services">Painting</a></li>
-                        <li><a href="#services">Minor Repairs</a></li>
-                        <li><a href="#services">Installation</a></li>
+                        <li><a href="#services" data-i18n="services.furniture.title">Furniture Assembly</a></li>
+                        <li><a href="#services" data-i18n="services.painting.title">Painting</a></li>
+                        <li><a href="#services" data-i18n="services.repairs.title">Minor Repairs</a></li>
+                        <li><a href="#services" data-i18n="services.installation.title">Installation</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4 class="footer-title">Contact</h4>
+                    <h4 class="footer-title" data-i18n="footer.contact">Contact</h4>
                     <ul class="footer-links">
-                        <li>+1 (555) 123-4567</li>
-                        <li>info@handyman-services.com</li>
-                        <li>Your City, State, USA</li>
+                        <li data-i18n="contact.details.phoneValue">+1 (555) 123-4567</li>
+                        <li data-i18n="contact.details.emailValue">me@yourhandyman.com</li>
+                        <li data-i18n="footer.location">Your City, State, USA</li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4 class="footer-title">Hours</h4>
+                    <h4 class="footer-title" data-i18n="footer.hours">Hours</h4>
                     <ul class="footer-links">
-                        <li>Monday - Sunday</li>
-                        <li>8:00 AM - 10:00 PM</li>
-                        <li>7 Days a Week</li>
+                        <li data-i18n="footer.hoursValue.0">Monday - Sunday</li>
+                        <li data-i18n="footer.hoursValue.1">8:00 AM - 10:00 PM</li>
+                        <li data-i18n="footer.hoursValue.2">7 Days a Week</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Handyman Services. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2024 Handyman Services. All rights reserved.</p>
             </div>
         </div>
     </footer>

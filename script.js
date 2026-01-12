@@ -1,24 +1,30 @@
 // Language switching functionality
 let currentLang = localStorage.getItem('language') || 'en';
 
+// Translation helper function
+function getTranslation(path, lang = currentLang) {
+    const keys = path.split('.');
+    let value = translations[lang];
+
+    for (const key of keys) {
+        if (value && value[key] !== undefined) {
+            value = value[key];
+        } else {
+            console.warn(`Translation not found for: ${path}`);
+            return path;
+        }
+    }
+    return value;
+}
+
 function setLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('language', lang);
 
     // Update all elements with data-i18n attributes
     document.querySelectorAll('[data-i18n]').forEach(element => {
-        const keys = element.getAttribute('data-i18n').split('.');
-        let value = translations[lang];
-
-        // Navigate through nested object
-        for (const key of keys) {
-            if (value && value[key] !== undefined) {
-                value = value[key];
-            } else {
-                console.warn(`Translation not found for: ${keys.join('.')}`);
-                return;
-            }
-        }
+        const path = element.getAttribute('data-i18n');
+        const value = getTranslation(path, lang);
 
         // Update element content
         if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
@@ -26,7 +32,14 @@ function setLanguage(lang) {
                 element.placeholder = value;
             }
         } else {
-            element.textContent = value;
+            // Check if element has a constant part (like an arrow)
+            const arrow = element.querySelector('.btn-arrow');
+            if (arrow) {
+                element.textContent = value + ' ';
+                element.appendChild(arrow);
+            } else {
+                element.textContent = value;
+            }
         }
     });
 
@@ -112,13 +125,15 @@ if (contactForm) {
         // Show loading state
         const submitButton = contactForm.querySelector('.btn-submit');
         const originalText = submitButton.innerHTML;
-        submitButton.innerHTML = 'Отправка...';
+        const loadingText = currentLang === 'ru' ? 'Отправка...' : 'Sending...';
+        submitButton.innerHTML = loadingText;
         submitButton.disabled = true;
 
         // Simulate form submission (replace with actual API call)
         setTimeout(() => {
             // Show success message
-            showNotification('Thank you! We\'ll contact you shortly.', 'success');
+            const successMsg = getTranslation('notifications.success');
+            showNotification(successMsg, 'success');
 
             // Reset form
             contactForm.reset();

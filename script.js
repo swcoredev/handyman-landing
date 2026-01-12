@@ -120,7 +120,17 @@ if (contactForm) {
         e.preventDefault();
 
         const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
+        const formEntries = Object.fromEntries(formData);
+
+        // Prepare data in the format expected by the n8n workflow
+        const payload = {
+            data: formEntries,
+            meta: {
+                lang: currentLang,
+                page: window.location.href,
+                timestamp: new Date().toISOString()
+            }
+        };
 
         // Show loading state
         const submitButton = contactForm.querySelector('.btn-submit');
@@ -135,7 +145,7 @@ if (contactForm) {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(data)
+                body: JSON.stringify(payload)
             });
 
             if (response.ok) {

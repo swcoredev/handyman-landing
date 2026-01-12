@@ -115,6 +115,8 @@ const translations = {
                 namePlaceholder: "John Smith",
                 phone: "Your Phone",
                 phonePlaceholder: "(555) 123-4567",
+                email: "Email (optional)",
+                emailPlaceholder: "your@email.com",
                 service: "What do you need help with?",
                 servicePlaceholder: "Select a task",
                 serviceOptions: {
@@ -260,6 +262,8 @@ const translations = {
                 namePlaceholder: "Иван Иванов",
                 phone: "Ваш телефон",
                 phonePlaceholder: "(555) 123-4567",
+                email: "Email (необязательно)",
+                emailPlaceholder: "your@email.com",
                 service: "С чем нужна помощь?",
                 servicePlaceholder: "Выберите услугу",
                 serviceOptions: {

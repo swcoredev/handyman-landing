@@ -1,0 +1,247 @@
+{
+  "name": "Handyman Landing— form",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "handyman",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "0e93c611-8b22-4857-b340-71b4def279ab",
+      "name": "Webhook",
+      "webhookId": "7599273f-30f6-4dc6-9269-dac442692a09"
+    },
+    {
+      "parameters": {
+        "fromEmail": "info@gromman.com",
+        "toEmail": "info@gromman.com",
+        "subject": "🔧 [HANDYMAN] New Request: {{$json.body.data.name}}",
+        "html": "=<div style=\"font-family: sans-serif; padding: 20px; border: 2px solid #2563eb; border-radius: 10px; max-width: 600px;\">\n  <h2 style=\"color: #2563eb; margin-top: 0;\">🏠 New Handyman Job Request</h2>\n  \n  <p><b>👤 Client Name:</b> {{$json.body.data.name}}</p>\n  <p><b>📱 Phone:</b> {{$json.body.data.phone}}</p>\n  <p><b>✉️ Email:</b> {{$json.body.data.email || 'Not provided'}}</p>\n  <p><b>🛠️ Requested Service:</b> {{$json.body.data.service}}</p>\n  \n  <div style=\"background: #f3f4f6; padding: 15px; border-radius: 5px; margin: 20px 0;\">\n    <b>📝 Message:</b><br/>\n    {{$json.body.data.message}}\n  </div>\n\n  <hr style=\"border: 0; border-top: 1px solid #e5e7eb;\" />\n  <p style=\"font-size: 12px; color: #6b7280;\">\n    <b>Source:</b> Handyman Landing Page<br/>\n    <b>Language:</b> {{$json.body.meta.lang}}<br/>\n    <b>URL:</b> {{$json.body.meta.page}}\n  </p>\n</div>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "03c50912-7c19-48a4-ae02-0a3b968ac7a6",
+      "name": "Send email",
+      "webhookId": "77be2054-8a41-4914-8609-6ef449344ae2",
+      "credentials": {
+        "smtp": {
+          "id": "ce12cYdFUTE9ku6v",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$node[\"Webhook\"].json.body.meta.lang}}",
+                    "rightValue": "ru",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "1f89c594-3213-47bd-ae4b-25211441ee74"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "98a0db05-7680-4d1c-92cf-ca55df6e3ea5",
+                    "leftValue": "={{$node[\"Webhook\"].json.body.meta.lang}}",
+                    "rightValue": "en",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        400,
+        0
+      ],
+      "id": "f7b48b82-fb76-4a74-a5db-1af7f9a80ff7",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"status\": \"ok\",\n  \"assistant\": {\n    \"assistant_id\": \"dev\",\n    \"message\": \"Спасибо! Мы получили вашу заявку и свяжемся с вами в ближайшее время.\",\n    \"next_action\": null\n  }\n}\n\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        624,
+        -64
+      ],
+      "id": "f963c735-dea7-4d8a-97a0-43dfaaf2ca8e",
+      "name": "Edit Fields RU"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"status\": \"ok\",\n  \"assistant\": {\n    \"assistant_id\": \"dev\",\n    \"message\": \"Thank you! We received your request and will contact you shortly.\",\n    \"next_action\": null\n  }\n}\n\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        624,
+        96
+      ],
+      "id": "3f4debdb-a9c7-4c53-a392-d163253285d0",
+      "name": "Edit Fields EN"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{$json}}",
+        "options": {
+          "responseCode": 200,
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        832,
+        16
+      ],
+      "id": "389b4fe7-2676-4624-b28b-fdce1f6f1790",
+      "name": "Respond to Webhook1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send email": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields RU",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields EN",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields RU": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields EN": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "timeSavedMode": "fixed",
+    "timezone": "America/New_York",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "saveExecutionProgress": true,
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": true
+  },
+  "versionId": "866931fc-1a8b-4bb9-be9e-6bd77c35500a",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "2e6364a9f1cf5b6168335246b6618d28c1e10336f253b26151370a96a713318c"
+  },
+  "id": "Z9x3o2EtTPr2fmzh",
+  "tags": []
+}

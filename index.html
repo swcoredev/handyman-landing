@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handyman Services - Professional Home Repair & Maintenance</title>
+    <meta name="description"
+        content="Professional handyman services for all your home needs. Fast, reliable, and affordable. Quality guaranteed.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="translations.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🔧</span>
+                    <span class="logo-text">Handyman</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                    <li><a href="#benefits" data-i18n="nav.benefits">Benefits</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="lang-switcher" id="langSwitcher">
+                        <span class="lang-option active" data-lang="en">EN</span>
+                        <span class="lang-divider">/</span>
+                        <span class="lang-option" data-lang="ru">RU</span>
+                    </button>
+                    <button class="cta-button" onclick="scrollToForm()" data-i18n="nav.ctaButton">Get Started</button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background" style="background-image: url('hero-image.jpg');"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="highlight">Professional Handyman</span>
+                        <br>at Your Service
+                    </h1>
+                    <p class="hero-description">
+                        We solve all your household problems quickly and professionally.
+                        From minor repairs to complex projects. Quality guaranteed.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToForm()">
+                            Get a Quote
+                            <span class="btn-arrow">→</span>
+                        </button>
+                        <button class="btn-secondary" onclick="smoothScrollTo('#services')">
+                            Our Services
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-container">
+                        <div class="floating-card card-1">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-text">Same Day Service</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <span class="card-icon">✓</span>
+                            <span class="card-text">Quality Guarantee</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <span class="card-icon">💰</span>
+                            <span class="card-text">Fair Pricing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">Professional handyman services for all your home needs - no job too small
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🪛</div>
+                    <h3 class="service-title">Furniture Assembly</h3>
+                    <p class="service-description">Professional assembly of all types of furniture. IKEA, Wayfair,
+                        Amazon purchases - we build it all.</p>
+                    <ul class="service-list">
+                        <li>IKEA & flat-pack furniture</li>
+                        <li>Office furniture setup</li>
+                        <li>Bed frames & dressers</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Painting Services</h3>
+                    <p class="service-description">Interior and exterior painting to refresh your home's look with
+                        professional results.</p>
+                    <ul class="service-list">
+                        <li>Interior wall painting</li>
+                        <li>Trim & baseboard painting</li>
+                        <li>Deck & fence staining</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Minor Repairs</h3>
+                    <p class="service-description">Fix small household issues quickly without the need for specialized
+                        contractors.</p>
+                    <ul class="service-list">
+                        <li>Drywall patching & repair</li>
+                        <li>Door & cabinet adjustments</li>
+                        <li>Squeaky floor fixes</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📐</div>
+                    <h3 class="service-title">Installation Services</h3>
+                    <p class="service-description">Professional installation of shelves, curtains, TVs, and home
+                        accessories.</p>
+                    <ul class="service-list">
+                        <li>TV wall mounting</li>
+                        <li>Shelving & storage systems</li>
+                        <li>Curtain rods & blinds</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3 class="service-title">Yard Maintenance</h3>
+                    <p class="service-description">Keep your outdoor spaces clean and well-maintained year-round.</p>
+                    <ul class="service-list">
+                        <li>Lawn mowing & edging</li>
+                        <li>Gutter cleaning</li>
+                        <li>Pressure washing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">General Handyman</h3>
+                    <p class="service-description">All-around home help for those odd jobs and daily maintenance tasks.
+                    </p>
+                    <ul class="service-list">
+                        <li>Light bulb replacement</li>
+                        <li>Picture & mirror hanging</li>
+                        <li>Caulking & weatherstripping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">Same-Day Service</h3>
+                    <p class="benefit-description">We arrive the same day or at a time that's convenient for you</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="benefit-title">Experienced Professionals</h3>
+                    <p class="benefit-description">All our specialists have proper training and extensive work
+                        experience
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3 class="benefit-title">Fair Pricing</h3>
+                    <p class="benefit-description">We provide quotes upfront. No hidden fees or surprises</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛠️</div>
+                    <h3 class="benefit-title">Professional Tools</h3>
+                    <p class="benefit-description">We use professional equipment and quality materials</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✓</div>
+                    <h3 class="benefit-title">Quality Guarantee</h3>
+                    <p class="benefit-description">We provide a minimum 6-month warranty on all completed work</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3 class="benefit-title">Customer-Focused</h3>
+                    <p class="benefit-description">We consider all your preferences and work until you're fully
+                        satisfied</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="profile-photo.jpg" alt="Professional Handyman" class="profile-photo">
+                    <div class="experience-badge">
+                        <span class="experience-number">25+</span>
+                        <span class="experience-text" data-i18n="about.experience">Years of Experience</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                    <h3 class="about-name" data-i18n="about.name">Your Name</h3>
+                    <p class="about-description" data-i18n="about.description">
+                        With over 25 years of experience in home repair and maintenance, I'm dedicated to providing
+                        quality handyman services to homeowners. I take pride in my work and treat every home as if
+                        it were my own. Committed to excellence and customer satisfaction.
+                    </p>
+                    <div class="about-certifications">
+                        <h4 data-i18n="about.certifications">Professional Skills</h4>
+                        <ul class="cert-list">
+                            <li data-i18n="about.certList.0">Expert Problem Solver</li>
+                            <li data-i18n="about.certList.1">Quality Workmanship</li>
+                            <li data-i18n="about.certList.2">Reliable & Trustworthy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Customer Reviews</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Excellent work! They assembled my new IKEA furniture quickly and professionally.
+                        The price was fair and the quality was outstanding. Will definitely use again!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Martinez</div>
+                            <div class="author-date">2 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Called them for TV mounting and shelf installation.
+                        Arrived on time, worked quickly and efficiently. Everything looks perfect. Highly recommend!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <div class="author-name">John Davis</div>
+                            <div class="author-date">1 month ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Very satisfied with the work! They painted my living room beautifully.
+                        Clean, professional, and reasonably priced. Thank you!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar">EW</div>
+                        <div class="author-info">
+                            <div class="author-name">Emily Williams</div>
+                            <div class="author-date">3 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Request Service</h2>
+                    <p class="contact-description">
+                        Submit a request and we'll call you back within 10 minutes
+                        to discuss details and schedule a convenient time
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+1 (555) 123-4567</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@handyman-services.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <div class="contact-label">Hours</div>
+                                <div class="contact-value">Daily: 8:00 AM - 10:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Type</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="furniture">Furniture Assembly</option>
+                                <option value="painting">Painting</option>
+                                <option value="repairs">Minor Repairs</option>
+                                <option value="installation">Installation Services</option>
+                                <option value="yard">Yard Maintenance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Job Description</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Describe what you need done"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            Submit Request
+                            <span class="btn-arrow">→</span>
+                        </button>
+                        <p class="form-privacy">
+                            By submitting, you agree to our privacy policy
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">🔧</span>
+                        <span class="logo-text">Handyman</span>
+                    </div>
+                    <p class="footer-description">
+                        Professional home repair and maintenance services.
+                        Serving the community since 2009.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Furniture Assembly</a></li>
+                        <li><a href="#services">Painting</a></li>
+                        <li><a href="#services">Minor Repairs</a></li>
+                        <li><a href="#services">Installation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li>+1 (555) 123-4567</li>
+                        <li>info@handyman-services.com</li>
+                        <li>Your City, State, USA</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Hours</h4>
+                    <ul class="footer-links">
+                        <li>Monday - Sunday</li>
+                        <li>8:00 AM - 10:00 PM</li>
+                        <li>7 Days a Week</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Handyman Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

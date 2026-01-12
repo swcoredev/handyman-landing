@@ -316,6 +316,42 @@
                                 data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="your@email.com">
                         </div>
                         <div class="form-group">
+                            <label for="street" data-i18n="contact.form.street">Street Address</label>
+                            <input type="text" id="street" name="street"
+                                data-i18n-placeholder="contact.form.streetPlaceholder" placeholder="123 Main St"
+                                required>
+                        </div>
+                        <div class="form-row" style="display: flex; gap: 1rem;">
+                            <div class="form-group" style="flex: 1;">
+                                <label for="house" data-i18n="contact.form.house">House Number</label>
+                                <input type="text" id="house" name="house"
+                                    data-i18n-placeholder="contact.form.housePlaceholder" placeholder="10" required>
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="apt" data-i18n="contact.form.apt">Apt / Unit</label>
+                                <input type="text" id="apt" name="apt"
+                                    data-i18n-placeholder="contact.form.aptPlaceholder" placeholder="4B">
+                            </div>
+                        </div>
+                        <div class="form-row" style="display: flex; gap: 1rem;">
+                            <div class="form-group" style="flex: 2;">
+                                <label for="city" data-i18n="contact.form.city">City</label>
+                                <input type="text" id="city" name="city"
+                                    data-i18n-placeholder="contact.form.cityPlaceholder" placeholder="New York"
+                                    required>
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="state" data-i18n="contact.form.state">State</label>
+                                <input type="text" id="state" name="state"
+                                    data-i18n-placeholder="contact.form.statePlaceholder" placeholder="NY" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip" data-i18n="contact.form.zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip" data-i18n-placeholder="contact.form.zipPlaceholder"
+                                placeholder="12345" required>
+                        </div>
+                        <div class="form-group">
                             <label for="service" data-i18n="contact.form.service">What do you need help with?</label>
                             <select id="service" name="service" required>
                                 <option value="" data-i18n="contact.form.servicePlaceholder">Select a task</option>

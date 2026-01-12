@@ -149,11 +149,11 @@
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "id": "={{$node[\"Webhook\"].json.body.meta.timestamp.replace(/\\D/g, '')}}",
+            "id": "={{ \"'\" + $node[\"Webhook\"].json.body.meta.timestamp.replace(/\\D/g, '') }}",
             "Date": "={{$node[\"Webhook\"].json.body.meta.timestamp}}",
             "Name": "={{$node[\"Webhook\"].json.body.data.name}}",
             "Email": "={{$node[\"Webhook\"].json.body.data.email}}",
-            "Phone": "={{$node[\"Webhook\"].json.body.data.phone}}",
+            "Phone": "={{ \"'\" + $node[\"Webhook\"].json.body.data.phone }}",
             "Message": "={{$node[\"Webhook\"].json.body.data.message}}",
             "Service": "={{$node[\"Webhook\"].json.body.data.service}}"
           },

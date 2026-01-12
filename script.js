@@ -127,6 +127,14 @@ if (contactForm) {
         const serviceName = serviceSelect.options[serviceSelect.selectedIndex].text;
         formEntries.service = serviceName;
 
+        // Combine address fields into a single string for Google Sheets
+        const { street, house, apt, city, state, zip } = formEntries;
+        let fullAddress = `${street}, ${house}`;
+        if (apt) fullAddress += `, Apt ${apt}`;
+        fullAddress += `, ${city}, ${state} ${zip}`;
+
+        formEntries.address = fullAddress;
+
         // Prepare data in the format expected by the n8n workflow
         const payload = {
             data: formEntries,

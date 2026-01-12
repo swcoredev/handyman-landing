@@ -395,4 +395,4 @@ document.querySelectorAll('.service-card').forEach(card => {
     });
 });
 
-console.log('Handyman Landing Page loaded successfully!');
+console.log('Handyman Landing Page v1.1 loaded successfully!');

@@ -37,6 +37,11 @@ const translations = {
                 description: "Secure mounting on any wall type. Hidden cables and perfect leveling for your viewing experience.",
                 items: ["Wall mounting up to 85\"", "Wire management", "Soundbar installation"]
             },
+            painting: {
+                title: "Painting",
+                description: "Interior painting with clean lines and surface preparation.",
+                items: ["Walls & ceilings", "Trim & molding", "Touch-ups"]
+            },
             lighting: {
                 title: "Lighting & Fans",
                 description: "Installation of new fixtures, dimmers, or ceiling fans. Safe and professional setup.",
@@ -165,7 +170,11 @@ const translations = {
             services: "Quick Links",
             contact: "Contact",
             hours: "Hours",
-            hoursValue: ["Daily: 8:00 AM - 8:00 PM"],
+            hoursValue: [
+                "Monday - Sunday",
+                "8:00 AM - 8:00 PM",
+                "7 Days a Week"
+            ],
             copyright: "© 2026 Your Handyman. All rights reserved."
         },
         // Notifications
@@ -218,6 +227,11 @@ const translations = {
                     "Кабель-менеджмент",
                     "Установка кронштейнов"
                 ]
+            },
+            painting: {
+                title: "Покраска",
+                description: "Интерьерная покраска с подготовкой поверхности.",
+                items: ["Стены и потолки", "Плинтуса и молдинги", "Косметический ремонт"]
             },
             lighting: {
                 title: "Электрика и свет",
@@ -351,7 +365,11 @@ const translations = {
             services: "Услуги",
             contact: "Контакт",
             hours: "Часы работы",
-            hoursValue: ["Ежедневно: 8:00 - 20:00"],
+            hoursValue: [
+                "Понедельник - Воскресенье",
+                "8:00 - 20:00",
+                "Без выходных"
+            ],
             copyright: "© 2026 Ваш Мастер. Все права защищены."
         },
         // Notifications

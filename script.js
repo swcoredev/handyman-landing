@@ -142,6 +142,20 @@ if (contactForm) {
 
         formEntries.address = fullAddress;
 
+        // Checkbox validation
+        const smsConsent = document.getElementById('consent-sms').checked;
+        const privacyConsent = document.getElementById('consent-privacy').checked;
+
+        if (!smsConsent || !privacyConsent) {
+            alert(currentLang === 'ru'
+                ? 'Пожалуйста, подтвердите согласие на получение СМС и с политикой конфиденциальности.'
+                : 'Please agree to SMS notifications and the Privacy Policy.');
+            return;
+        }
+
+        formEntries.consentSMS = smsConsent;
+        formEntries.consentPrivacy = privacyConsent;
+
         // Prepare data in the format expected by the n8n workflow
         const payload = {
             data: formEntries,

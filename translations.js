@@ -161,7 +161,8 @@ const translations = {
                 message: "A few details",
                 messagePlaceholder: "Describe what you need done",
                 submit: "Send me a message",
-                privacy: "By clicking Submit, you agree to our <a href='privacy.html' style='text-decoration: underline; color: inherit;'>Privacy Policy</a> and to receive SMS/text messages from us. Standard rates may apply."
+                consentSMS: "I agree to receive SMS messages regarding my request.",
+                consentPrivacy: "I have read and agree to the <a href='privacy.html' target='_blank'>Privacy Policy</a>."
             }
         },
         // Footer
@@ -383,7 +384,8 @@ const translations = {
                 message: "Детали задачи",
                 messagePlaceholder: "Опишите кратко, что нужно сделать",
                 submit: "Отправить сообщение",
-                privacy: "Нажимая кнопку, вы соглашаетесь с <a href='privacy.html' style='text-decoration: underline; color: inherit;'>Политикой конфиденциальности</a> и на получение СМС-сообщений. Могут взиматься стандартные тарифы."
+                consentSMS: "Я согласен получать SMS-уведомления для обработки моей заявки.",
+                consentPrivacy: "Я прочитал и согласен с <a href='privacy.html' target='_blank'>политикой конфиденциальности</a>."
             }
         },
         // Footer

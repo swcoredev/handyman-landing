@@ -1126,6 +1126,16 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .contact-form-wrapper {
+        padding: var(--spacing-lg);
+        /* Reduce padding on tablet/mobile */
+    }
+
+    .contact-details {
+        margin-bottom: var(--spacing-xl);
+        /* Add space between info and form */
+    }
+
     .nav-links {
         display: none;
     }
@@ -1145,6 +1155,11 @@ body {
 }
 
 @media (max-width: 640px) {
+    .contact-form-wrapper {
+        padding: var(--spacing-md);
+        /* Even smaller padding on phones */
+    }
+
     .hero-title {
         font-size: var(--font-size-3xl);
     }

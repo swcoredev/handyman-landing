@@ -43,6 +43,13 @@ function setLanguage(lang) {
         }
     });
 
+    // Update elements with data-i18n-html attributes (safe HTML)
+    document.querySelectorAll('[data-i18n-html]').forEach(element => {
+        const path = element.getAttribute('data-i18n-html');
+        const value = getTranslation(path, lang);
+        element.innerHTML = value;
+    });
+
     // Update language switcher UI
     document.querySelectorAll('.lang-option').forEach(option => {
         option.classList.remove('active');

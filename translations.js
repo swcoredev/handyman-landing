@@ -161,7 +161,7 @@ const translations = {
                 message: "A few details",
                 messagePlaceholder: "Describe what you need done",
                 submit: "Send me a message",
-                privacy: "I value your privacy and only use your phone to contact you about the job."
+                privacy: "By submitting, you agree to our <a href='privacy.html' style='text-decoration: underline; color: inherit;'>Privacy Policy</a>."
             }
         },
         // Footer
@@ -178,6 +178,29 @@ const translations = {
             copyright: "© 2026 Your Handyman. All rights reserved."
         },
         // Notifications
+        privacy: {
+            pageTitle: "Privacy Policy - Handyman Services",
+            title: "Privacy Policy",
+            updated: "Last Updated: January 13, 2026",
+            sections: {
+                collection: {
+                    title: "1. Information We Collect",
+                    text: "When you request a service, we collect personal information such as your name, phone number, email address, and home address. This data is used solely to contact you and visit your location to perform the requested work."
+                },
+                usage: {
+                    title: "2. How We Use Your Information",
+                    text: "We use your data to: Schedule appointments, provide price estimates, and communicate about job details. We do not sell or rent your personal information to third parties."
+                },
+                protection: {
+                    title: "3. Data Security",
+                    text: "We implement reasonable security measures to protect your personal information. Your data is accessible only to the handyman performing the work."
+                },
+                rights: {
+                    title: "4. Your Rights",
+                    text: "You may request to have your information deleted from our records at any time after the job is completed. To do so, simply contact us via phone or email."
+                }
+            }
+        },
         notifications: {
             success: "Got it! I'll call or text you shortly.",
             error: "Something went wrong. Please try again or text me directly."
@@ -356,7 +379,7 @@ const translations = {
                 message: "Детали задачи",
                 messagePlaceholder: "Опишите кратко, что нужно сделать",
                 submit: "Отправить сообщение",
-                privacy: "Я уважаю вашу конфиденциальность и использую номер только для связи по работе."
+                privacy: "Отправляя заявку, вы соглашаетесь с <a href='privacy.html' style='text-decoration: underline; color: inherit;'>Политикой конфиденциальности</a>."
             }
         },
         // Footer
@@ -373,6 +396,29 @@ const translations = {
             copyright: "© 2026 Ваш Мастер. Все права защищены."
         },
         // Notifications
+        privacy: {
+            pageTitle: "Политика конфиденциальности - Ваш Мастер",
+            title: "Политика конфиденциальности",
+            updated: "Последнее обновление: 13 января 2026",
+            sections: {
+                collection: {
+                    title: "1. Сбор информации",
+                    text: "Когда вы оставляете заявку, мы собираем такие данные, как ваше имя, телефон, email и адрес. Эти данные нужны только для того, чтобы связаться с вами и приехать для выполнения работ."
+                },
+                usage: {
+                    title: "2. Использование данных",
+                    text: "Мы используем ваши данные, чтобы: назначать встречи, рассчитывать стоимость и обсуждать детали заказа. Мы никогда не продаем и не передаем ваши данные третьим лицам."
+                },
+                protection: {
+                    title: "3. Защита данных",
+                    text: "Мы принимаем разумные меры для защиты вашей личной информации. Доступ к данным имеет только мастер, выполняющий работу."
+                },
+                rights: {
+                    title: "4. Ваши права",
+                    text: "Вы можете в любой момент попросить удалить вашу информацию из нашей базы после завершения работ. Для этого просто свяжитесь с нами по телефону или email."
+                }
+            }
+        },
         notifications: {
             success: "Получено! Я свяжусь с вами в ближайшее время.",
             error: "Произошла ошибка. Пожалуйста, попробуйте еще раз или напишите мне СМС."

@@ -256,22 +256,20 @@ body {
 }
 
 .hero-content {
-    display: flex;
-    /* Changed from grid to flex for centering */
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
     align-items: center;
-    /* Center horizontally */
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
     position: relative;
     z-index: 2;
     /* Ensure content is above overlay */
 }
 
-/* Hide the empty image column */
+/* Ensure image column is visible */
 .hero-image {
-    display: none;
+    display: block;
+    position: relative;
+    animation: fadeInRight 0.8s ease-out;
 }
 
 .hero-text {

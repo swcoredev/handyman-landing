@@ -161,7 +161,7 @@ const translations = {
                 message: "A few details",
                 messagePlaceholder: "Describe what you need done",
                 submit: "Send me a message",
-                privacy: "By submitting, you agree to our <a href='privacy.html' style='text-decoration: underline; color: inherit;'>Privacy Policy</a>."
+                privacy: "By clicking Submit, you agree to our <a href='privacy.html' style='text-decoration: underline; color: inherit;'>Privacy Policy</a> and to receive SMS/text messages from us. Standard rates may apply."
             }
         },
         // Footer
@@ -198,6 +198,10 @@ const translations = {
                 rights: {
                     title: "4. Your Rights",
                     text: "You may request to have your information deleted from our records at any time after the job is completed. To do so, simply contact us via phone or email."
+                },
+                sms: {
+                    title: "5. SMS Communications",
+                    text: "We may send you SMS messages regarding your service request, including appointment reminders and updates. Message frequency varies. You can opt-out at any time by replying STOP. Message and data rates may apply."
                 }
             }
         },
@@ -379,7 +383,7 @@ const translations = {
                 message: "Детали задачи",
                 messagePlaceholder: "Опишите кратко, что нужно сделать",
                 submit: "Отправить сообщение",
-                privacy: "Отправляя заявку, вы соглашаетесь с <a href='privacy.html' style='text-decoration: underline; color: inherit;'>Политикой конфиденциальности</a>."
+                privacy: "Нажимая кнопку, вы соглашаетесь с <a href='privacy.html' style='text-decoration: underline; color: inherit;'>Политикой конфиденциальности</a> и на получение СМС-сообщений. Могут взиматься стандартные тарифы."
             }
         },
         // Footer
@@ -416,6 +420,10 @@ const translations = {
                 rights: {
                     title: "4. Ваши права",
                     text: "Вы можете в любой момент попросить удалить вашу информацию из нашей базы после завершения работ. Для этого просто свяжитесь с нами по телефону или email."
+                },
+                sms: {
+                    title: "5. СМС уведомления",
+                    text: "Мы можем отправлять вам СМС-сообщения, касающиеся вашей заявки, включая напоминания о встречах и обновления. Частота сообщений варьируется. Вы можете отказаться в любое время, ответив STOP. Могут взиматься тарифы за сообщения и передачу данных."
                 }
             }
         },

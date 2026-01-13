@@ -193,7 +193,7 @@ const translations = {
                 },
                 protection: {
                     title: "3. Data Security",
-                    text: "We implement reasonable security measures to protect your personal information. Your data is accessible only to the handyman performing the work."
+                    text: "We implement reasonable security measures to protect your personal information. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
                 },
                 rights: {
                     title: "4. Your Rights",
@@ -201,7 +201,7 @@ const translations = {
                 },
                 sms: {
                     title: "5. SMS Communications",
-                    text: "We may send you SMS messages regarding your service request, including appointment reminders and updates. Message frequency varies. You can opt-out at any time by replying STOP. Message and data rates may apply."
+                    text: "By providing your phone number, you agree to receive text messages from us. Message and data rates may apply. Message frequency varies. Reply HELP for help and STOP to cancel."
                 }
             }
         },
@@ -415,7 +415,7 @@ const translations = {
                 },
                 protection: {
                     title: "3. Защита данных",
-                    text: "Мы принимаем разумные меры для защиты вашей личной информации. Доступ к данным имеет только мастер, выполняющий работу."
+                    text: "Мы принимаем меры для защиты вашей личной информации. Мы не передаем мобильные данные третьим лицам или партнерам для маркетинговых целей. Данные о согласии на получение СМС не передаются никому."
                 },
                 rights: {
                     title: "4. Ваши права",
@@ -423,7 +423,7 @@ const translations = {
                 },
                 sms: {
                     title: "5. СМС уведомления",
-                    text: "Мы можем отправлять вам СМС-сообщения, касающиеся вашей заявки, включая напоминания о встречах и обновления. Частота сообщений варьируется. Вы можете отказаться в любое время, ответив STOP. Могут взиматься тарифы за сообщения и передачу данных."
+                    text: "Предоставляя свой номер телефона, вы соглашаетесь получать от нас СМС-сообщения. Частота сообщений варьируется. Могут взиматься тарифы за сообщения и передачу данных. Ответьте HELP для помощи и STOP для отмены."
                 }
             }
         },
